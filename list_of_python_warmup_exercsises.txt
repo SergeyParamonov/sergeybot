@@ -55,4 +55,10 @@ Test: A = ["John", 2, "John", "Peter", "John"], B = [1,2,4,5,6] --> [False, Fals
 
 Hint: Use zip(A,B)
 
-9.
+9. Define a class Box that takes as initial parameters height and side_lenght (assume, it is a square at the top and bottom), define methods:
+
+a) get bottom (or top) area
+b) get volume of the box
+c) Assume that any box that is less than 0.001 m^3 cost 1$, between 0.001 and 1 cost 10$ and above 100$, make a function that returns the price of a box1
+
+10. Given a file "test.txt" with numbers and words, produce a new file named "filtered.txt" where everything but odd numbers are copied
