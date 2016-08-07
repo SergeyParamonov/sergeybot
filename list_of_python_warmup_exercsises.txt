@@ -1,0 +1,58 @@
+For all of these exercises you should define a function, that would solve it and try it on the given tests
+
+0. Given an int n, return True if it is within 10 of 100 or 200. 
+Hint: abs(num) computes the absolute value of a number.
+
+Test: 94 --> True, 120 --> False, 202 --> True, 211 --> False
+
+1. Given a list of numbers, produce a list where each element has its value + 1
+
+Test: [1,2,3,4,5] --> [2,3,4,5,6]
+
+Hint: list comprehension
+
+2. Given a list of elements, produce a list identical to the given but without strings
+
+Test: [1,"John","2","Test",5] --> [1,5]
+
+Hint: type(x) is str
+
+3. Reverse the given list
+
+[1,2,"Hoy"] --> ["Hoy",2,1]
+
+Hint: so many ways to do, go for the easiest
+
+4. Given a list of numbers, find two largest elements and return them
+
+[5,1,4,0,1,5,3,7] --> (7,5)
+
+Hint: keep track of the max1 and max2
+
+5. Given the list of numbers, print out those that are divisible by 5 or 17
+
+[5,1,3,17,34,15,4] --> [5,17,34,15]
+
+Hint: complex if with an or
+
+6. Given a list of elements, produce a table with frequencies of each element
+
+["test", 2, "test", 2, "test", 1, 0, "test1", "test", "john", 5] --> "test":4, 2:2, 1:1, 0:1, 5:1, "test1":1, "john":1
+
+Hint: dictionary and method "get"
+Advanced solution: defaultdict(int)
+
+7. Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+
+string_times('Test',2) --> 'TesTes'
+string_times('Hi', 2) -> 'HiHi'
+string_times('Hi', 3) -> 'HiHiHi'
+string_times('Hi', 1) -> 'Hi'
+ 
+8. Given two lists A and B of the same length, return a list where on the i-th position is True iff A[i] is equal to "John" and B[i] is even
+
+Test: A = ["John", 2, "John", "Peter", "John"], B = [1,2,4,5,6] --> [False, False, True, False, True] 
+
+Hint: Use zip(A,B)
+
+9.

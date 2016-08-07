@@ -11,7 +11,7 @@ def authorize():
     redirect_uri  = 'http://127.0.0.1:65010/authorize_callback'
 
     r.set_oauth_app_info(client_id     = client_id,
-                          client_secret = client_secret,
+                         client_secret = client_secret,
                          redirect_uri  = redirect_uri)
 
     r.refresh_access_information(os.environ['AUTHTOKEN'])
@@ -22,9 +22,9 @@ def authorize():
 
 r, user = authorize()
 
-submissions = r.get_subreddit('videos').get_hot(limit=10)
+submissions = list(r.get_subreddit('videos').get_hot(limit=10))
 
-print(list(submissions))
+print(submissions)
 
 
 
